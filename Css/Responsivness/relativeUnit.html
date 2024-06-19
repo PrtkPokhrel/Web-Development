@@ -1,0 +1,23 @@
+em:
+ems looks for parent font and compoud the size accordingly 
+if the parent has no font size set it looks for default browser font size which is 16px
+
+the font size looks for parent and all other elemet looks at font size 
+
+for padding use ems
+eg:
+.parent{
+    font-size: 1 em
+}
+
+.child{
+    margin: 2em  // the margin will look up for font-size so margin will be 1em 
+}
+
+
+rem:
+rem looks for root element font size which is html tag. it just looks for html font size which is 16 px
+
+for rem the rems always look for root which is html
+
+for spacing or margin use rem
