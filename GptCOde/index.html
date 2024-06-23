@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitwarden Navbar</title>
-    <link rel="stylesheet" href="/GptCOde/style.css">
+    <style>
+        .content-box {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid black;
+            box-sizing: content-box; /* default */
+        }
+
+        .border-box {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Box Sizing Example</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="path/to/logo.png" alt="Bitwarden Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Developers</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#" class="enterprise-sales">Enterprise sales</a></li>
-            </ul>
-            <div class="auth-links">
-                <a href="#">Get started</a>
-                <a href="#">Log in</a>
-            </div>
-        </nav>
-    </header>
+    <div class="content-box">Content-Box</div>
+    <div class="border-box">Border-Box</div>
 </body>
 </html>
