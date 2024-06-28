@@ -48,3 +48,25 @@ we can concatenate(add) two array using concat() method
 
 
 
+
+
+**JS Array Search**
+
+
+Array.indexof() method searches for an array's element and returns the index positon of that element
+Array.indexOf() method returns -1 if the element is not found
+if there are more than one item it returns the position of the first occurence
+
+Array.lastindexOf() is the same as the Array.indexOf() but returns the last occurence of the given element if there are more than one
+
+
+
+Array.includes() returns boolean true or false if the element is present in the array or not
+Array.includes() allows us to check for the NaN value unlike Array.indexOf() whch does not
+
+
+
+
+**JS Array Sort**
+
+sort() method sort  

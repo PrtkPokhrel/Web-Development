@@ -43,13 +43,17 @@
 
 
 
-let courses = ["HTML", "CSS", "JavaScript", "React"];
+// let courses = ["HTML", "CSS", "JavaScript", "React"];
 // let otherCourses = ["Node.js", "Expess.js"]
 // let newArr = courses.concat(otherCourses)
 // console.log(newArr)
 
 
 
-let conversion = courses.toString()
-console.log(conversion)
-console.log(typeof conversion)
+// let conversion = courses.toString()
+// console.log(conversion)
+// console.log(typeof conversion)
+
+
+let courses = ["HTML", "CSS", "JavaScript", "React"];
+console.log(courses.indexOf("CSS"))
