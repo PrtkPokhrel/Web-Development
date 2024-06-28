@@ -26,7 +26,8 @@ function first(arr, num = 0) {
 }
 
 
-console.log(first([1, 2, 3], 2))
+console.log(first([1, 2, 3], 4))
+console.log(first([1, 2, 3]))
 
 
 
