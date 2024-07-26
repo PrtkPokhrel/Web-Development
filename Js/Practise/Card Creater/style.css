@@ -1,0 +1,27 @@
+#outer{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    min-height: 112px
+}
+#left{
+    display: flex;
+    align-items: end;
+}
+.btn{
+    z-index: 1;
+     
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+}
+
+.down-content
+{
+    display: flex;
+    gap: 21px;
+}
