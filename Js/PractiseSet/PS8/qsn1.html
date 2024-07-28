@@ -1,0 +1,34 @@
+<!-- Write a program to show different alerts when different buttons are clicked -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+.btn{
+    border: 2px solid red;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+    </style>
+    <body>
+        <button class="btn" id="btn1">Click Me</button>
+        <button class="btn" id="btn2">Click Me</button>
+        <button class="btn" id="btn3">Click Me</button>
+        <button class="btn" id="btn4">Click Me</button>
+        <script>
+        // let a=1
+        // let message="Button 1 was clicked"
+        for (let index = 1; index <5 ; index++) {
+            let message="Button " + index + "   was clicked"
+            document.querySelector("#btn"+index).addEventListener("click" ,()=>{
+              alert(message)
+             })
+        }
+        </script>
+    </body>
+</html>

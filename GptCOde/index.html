@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .content-box {
-            width: 200px;
-            padding: 20px;
-            border: 10px solid black;
-            box-sizing: content-box; /* default */
-        }
-
-        .border-box {
-            width: 200px;
-            padding: 20px;
-            border: 10px solid black;
-            box-sizing: border-box;
-        }
-    </style>
-    <title>Box Sizing Example</title>
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="content-box">Content-Box</div>
-    <div class="border-box">Border-Box</div>
+    <div class="container">
+        <h1>Bookmark Manager</h1>
+        <form id="bookmark-form">
+            <label for="website-name">Website Name:</label>
+            <input type="text" id="website-name" required>
+            <label for="website-url">Website URL:</label>
+            <input type="url" id="website-url" required>
+            <button type="submit">Add Bookmark</button>
+        </form>
+        <h2>Bookmarks</h2>
+        <ul id="bookmark-list"></ul>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

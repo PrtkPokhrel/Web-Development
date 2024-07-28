@@ -1,0 +1,59 @@
+<!-- Create a website which is capable of storing bookmark of your favourite website using href -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.inputs{
+    margin: 12px;
+    padding: 12px;
+}
+ul{
+    display: flex;
+    gap:2rem;
+}
+li{
+    list-style: none;
+}
+</style>
+
+<body>
+    <div class="wname">
+        Enter website name:<input type="text" placeholder="Enter the name you want" id="websiteName" class="inputs">
+
+    </div>
+
+    <div class="waddress">
+        Enter website address:<input type="text" placeholder="Enter the website address" id="websiteAddress" class="inputs">
+    </div>
+
+    <button id="saveBtn">Save </button>
+
+    <h2 class="h2">Bookmarks</h2>
+    <div class="lists">
+        <ul>
+            <a><li></li></a>
+        </ul>
+    </div>
+
+    
+    <script>
+  
+        let save=document.querySelector("#saveBtn").addEventListener("click" ,function value(){
+            let wname=document.querySelector("#websiteName").value
+            let waddress=document.querySelector("#websiteAddress").value
+
+            //having problem to show the bookmarks
+            let showBookmark=document.querySelector("li").innerHTML= wname 
+            showBookmark.setAttribute("href",waddress);
+            showBookmark.setAttribute("target","_blank");
+        })
+          
+    </script>
+</body>
+</html>
