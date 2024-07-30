@@ -35,11 +35,7 @@ li{
     <button id="saveBtn">Save </button>
 
     <h2 class="h2">Bookmarks</h2>
-    <div class="lists">
-        <ul>
-            <a><li></li></a>
-        </ul>
-    </div>
+
 
     
     <script>
@@ -47,11 +43,16 @@ li{
         let save=document.querySelector("#saveBtn").addEventListener("click" ,function value(){
             let wname=document.querySelector("#websiteName").value
             let waddress=document.querySelector("#websiteAddress").value
+            let anchor=document.createElement("a").setAttribute("href",waddress)
+            let li=document.createElement("li").innerHTML=wname
+            document.body.append(anchor) 
+            document.body.append(li)
+           
 
-            //having problem to show the bookmarks
-            let showBookmark=document.querySelector("li").innerHTML= wname 
-            showBookmark.setAttribute("href",waddress);
-            showBookmark.setAttribute("target","_blank");
+
+
+
+
         })
           
     </script>
